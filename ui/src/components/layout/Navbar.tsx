@@ -32,8 +32,12 @@ export const Navbar = () => {
               <PlusCircle className="h-4 w-4" /> Post a Listing
             </Link>
           </Button>
-          <Button variant="outline">Log in</Button>
-          <Button>Sign up</Button>
+          <Button variant="outline" asChild>
+            <Link to="/login">Log in</Link>
+          </Button>
+          <Button asChild>
+            <Link to="/signup">Sign up</Link>
+          </Button>
         </div>
       </div>
     </nav>

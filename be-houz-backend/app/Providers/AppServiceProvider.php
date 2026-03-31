@@ -21,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         // Point reset link to your React frontend
-        ResetPassword::createUrlUsing(function (object $notifiable, string $token) {
-            return config('app.frontend_url') . '/reset-password?token=' . $token . '&email=' . urlencode($notifiable->getEmailForPasswordReset());
-        });
+        // ResetPassword::createUrlUsing(function (object $notifiable, string $token) {
+        //     return config('app.frontend_url') . '/reset-password?token=' . $token . '&email=' . urlencode($notifiable->getEmailForPasswordReset());
+        // });
     }
 }
